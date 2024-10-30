@@ -14,10 +14,15 @@ body {
   background: hsl(216, 100%, 60%);
 }
 
+input,
+button {
+  font: inherit;
+}
+
 .container {
   background: hsl(216, 100%, 70%);
   border-radius: 1rem;
-  max-width: 450px;
+  max-width: 500px;
   display: grid;
   place-items: center;
   gap: 1rem;
@@ -37,10 +42,26 @@ body {
   gap: 1rem;
 }
 
+.fw-bold {
+  font-weight: bold;
+}
+
 .myBtn {
   border: none;
   outline: none;
   padding: 0.3em 1em;
   border-radius: 100vmax;
   background: hsl(216, 100%, 60%);
+  transition: background 150ms ease-in-out;
+}
+
+.myBtn:hover {
+  background: hsl(216, 100%, 50%);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    min-height: 50vh;
+    padding-inline: 1rem;
+  }
 }

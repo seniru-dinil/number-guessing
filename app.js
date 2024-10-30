@@ -7,6 +7,7 @@ let randNumber = Math.floor(Math.random() * 10);
 
 const myFunction = () => {
   let inputNumber = document.getElementById("myInput").value;
+  document.getElementById("myInput").value = "";
   if (count === 1) {
     myText.innerText = `game over`;
     myStatus.innerText = ``;
