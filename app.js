@@ -32,7 +32,7 @@ const myFunction = () => {
 
 const resetFunction = () => {
   document.getElementById("myInput").value = "";
-
+  randNumber = Math.floor(Math.random() * 10);
   count = 3;
   myStatus.innerText = ``;
   myText.innerText = `pick a number between 0 - 10`;
