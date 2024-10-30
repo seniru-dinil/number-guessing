@@ -17,6 +17,7 @@ body {
 .container {
   background: hsl(216, 100%, 70%);
   border-radius: 1rem;
+  max-width: 450px;
   display: grid;
   place-items: center;
   gap: 1rem;
